@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+}
+
+#outer_main{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inner_main {
+    height: 600px;
+    width: 600px;
+    border: 2px solid;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adding shadow effect */
+}
+
+
+
+#form{
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: serif;
+
+}
+
+#gross_annual_income , #extra_income , #age_group,#deduction{
+    height: 35px;
+    width: 450px;
+}
+
+#submit{
+    width: 455px;
+    height: 35px;
+    background:blue;
+    color: white;
+}
+
+.form_elements{
+    padding-top: 10px;
+    margin: 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 45%;
+    height:40% ;
+    color: black;
+    
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#displayIncome{
+    font-size:40px;
+    text-align: center;
+    font-weight: 600;
+}
+
+#displayIncome2{
+    font-size:25px;
+    text-align: center;
+    font-weight: 500;
+}
+
+#displayIncome3{
+    font-size:22px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.error_icon1,
+.error_icon2,
+.error_icon3,
+.error_icon4 {
+    display: none; 
+    color: rgb(250, 46, 46);
+}
+
+.error_icon1:hover::after {
+    content: attr(title);
+    padding: 5px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    white-space: nowrap;
+}
+
+.error_icon2:hover::after {
+    content: attr(title);
+    padding: 5px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    white-space: nowrap;
+}
+
+.error_icon4:hover::after {
+    content: attr(title);
+    padding: 5px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    white-space: nowrap;
+}
+
